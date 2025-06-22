@@ -1,0 +1,64 @@
+@font-face {
+    font-family: EmptyMarker;
+    src: url("../fonts/empty-marker.bold.ttf") format("truetype");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    user-select: none;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    font-family: EmptyMarker, sans-serif;
+    font-size: 48px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.drawing-pixel {
+    flex: 1;
+    border: 1px solid transparent;
+    cursor: crosshair;
+    transition: background-color 0.1s ease;
+}
+
+.gridlines-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+label {
+    cursor: pointer;
+}
