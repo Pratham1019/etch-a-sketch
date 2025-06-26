@@ -10,17 +10,49 @@
 </head>
 
 <body>
+    <header id="header">Etch-a-Sketch</header>
     <div id="app">
-        <header id="header">Etch-a-Sketch</header>
+        <div id="control-panel">
+            <fieldset class="control-group">
+                <legend>Color</legend>
+                <label for="color-picker">Pick a color:</label>
+                <input type="color" id="color-picker" name="color-picker" value="#000000">
+            </fieldset>
 
-        <main id="main-content">
+            <fieldset class="control-group">
+                <legend>Tools</legend>
+
+                <div class="control-item">
+                    <input type="checkbox" id="rainbow" />
+                    <label for="rainbow">Rainbow Mode</label>
+                </div>
+
+                <div class="control-item">
+                    <input type="checkbox" id="eraser" />
+                    <label for="eraser">Eraser</label>
+                </div>
+
+                <div class="control-item">
+                    <input type="checkbox" id="gridlines" />
+                    <label for="gridlines">Show Gridlines</label>
+                </div>
+
+                <button id="clear-btn" type="button">Clear Grid</button>
+            </fieldset>
+
+            <fieldset class="control-group">
+                <legend>Grid Size</legend>
+                <label for="grid-size">
+                    Grid size: <span id="grid-size-value">16</span>
+                </label>
+                <input type="range" min="1" max="7" value="4" id="grid-size" />
+            </fieldset>
+        </div>
+
+
+        <div id="drawing-container">
             <div id="grid-container"></div>
-
-            <div class="gridlines-control">
-                <input type="checkbox" id="gridlines" />
-                <label for="gridlines">Gridlines</label>
-            </div>
-        </main>
+        </div>
     </div>
 </body>
 

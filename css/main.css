@@ -3,6 +3,7 @@
     src: url("../fonts/empty-marker.bold.ttf") format("truetype");
 }
 
+/* Base Reset & Layout */
 html,
 body {
     margin: 0;
@@ -10,27 +11,98 @@ body {
     box-sizing: border-box;
     height: 100%;
     user-select: none;
+    background-color: whitesmoke;
 }
 
 #app {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
+/* Header */
 #header {
     font-family: EmptyMarker, sans-serif;
     font-size: 48px;
-    padding: 10px 0;
+    padding: 10px 0 50px 0;
     text-align: center;
 }
 
+/* Main Layout */
 #main-content {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     gap: 12px;
     margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Control Panel */
+#control-panel {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grouped Fieldsets */
+.control-group {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: white;
+}
+
+.control-group legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 6px;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+/* Clear Button */
+#clear-btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#clear-btn:hover {
+    background-color: #e05555;
+}
+
+/* Input Controls */
+input[type="range"] {
+    width: 100%;
+}
+
+label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Drawing Container */
+#drawing-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 #grid-container {
@@ -51,14 +123,4 @@ body {
     border: 1px solid transparent;
     cursor: crosshair;
     transition: background-color 0.1s ease;
-}
-
-.gridlines-control {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-label {
-    cursor: pointer;
 }
