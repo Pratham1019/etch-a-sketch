@@ -23,8 +23,7 @@ Open the app in your browser: [https://pratham1019.github.io/etch-a-sketch](http
 - Click "Clear" to reset the grid.
 
 ## Screenshots
-
-![etch-a-sketch screenshot](./screenshot.png)
+![etch-a-sketch screenshot](./assets/sceenshot.png)
 
 ## Technologies Used
 
