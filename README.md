@@ -9,7 +9,7 @@ A simple browser-based Etch-A-Sketch application built with HTML, CSS, and JavaS
 - Eraser tool
 - Clear/reset button
 
-## Getting Started
+## Live Website
 
 Open the app in your browser: [https://pratham1019.github.io/etch-a-sketch](https://pratham1019.github.io/etch-a-sketch)
 
