@@ -1,7 +1,8 @@
 @font-face {
     font-family: EmptyMarker;
-    src: url("../fonts/empty-marker.bold.ttf") format("truetype");
+    src: url("../assets/fonts/empty-marker.bold.ttf") format("truetype");
 }
+
 
 /* Base Reset & Layout */
 html,
